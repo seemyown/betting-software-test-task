@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "betting-software-test-task-line-provider"
+version = "0.1.0"
+description = ""
+authors = ["Semyon Albeev <semyon.albeev@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.115.6"
+fastapi-cli = "^0.0.7"
+faststream = {extras = ["rabbitmq"], version = "^0.5.34"}
+redis = "^5.2.1"
+pydantic-settings = "^2.7.1"
+aio-pika = "^9.5.4"
+icecream = "^2.1.4"
+sqlalchemy = "^2.0.37"
+asyncpg = "^0.30.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
